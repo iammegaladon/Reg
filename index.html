@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- DAISYUI -->
+ 
+
+
+   <title>Team Meg Corporation | Client Portal</title>
+</head>
+<body>
+    <div class="container">
+        <header>Team Meg Corporation Client Portal</header>
+        <h1>Registration</h1>
+        
+
+        <form action="user_auth.html">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter your ccupation" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Project Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Purpose of Project</label>
+                            <select name="asd" id="as">
+                              <option disabled selected>Select Purpose</option>
+                              <option>Buisness</option>
+                              <option>Personal</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Project Budget</label>
+                          <select name="Budget" id="bud">
+                            <option disabled selected>Select Your Budget</option>
+                            <option value="">500$-1000$</option>
+                            <option value="">1500$-2000$</option>
+                            <option value="">3000$-4000$</option>
+                            <option value="">Above 4000$</option>
+                          </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Finalized Budget</label>
+                            <input type="text" placeholder="Enter Finalized Budget" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Payment Completed?</label>
+                            <select name="" id="">
+                              <option disabled selected>Select Your Response</option>
+                              <option value="">Yes</option>
+                              <option value="">No</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Project Start Date(if Started)</label>
+                            <input type="date" placeholder="Enter Start Date of Project" disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Payment Date(if Perfomed)</label>
+                            <input type="date" placeholder="Enter Transaction Date" disabled>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+           
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+ 
+
+
+</body>
+</html>
