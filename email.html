@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Meg Corporation | Succeed</title>
+    <link rel="stylesheet" href="email.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Use Google font Roboto */
+            text-align: center; /* Center text */
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Make sure the container fills the viewport height */
+        }
+
+        .text {
+            margin-top: 20px; /* Add space between the SVG icon and the text */
+            opacity: 0; /* Initially hide the text */
+            animation: fadeIn 1s ease-in-out forwards 2s; /* Apply fade-in animation after 2 seconds */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Start with opacity 0 */
+            }
+            to {
+                opacity: 1; /* End with opacity 1 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="check-container">
+            <div class="check-background">
+                <svg viewBox="0 0 65 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 25L27.3077 44L58.5 7" stroke="white" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="check-shadow"></div>
+        </div>
+        <div class="text">
+            Login to Your Project Dashboard<br>
+            by Accessing the Account Details and Login Link<br>
+            Sended to your E-Mail
+        </div>
+    </div>
+
+    <script>
+        // Change the URL without reloading the page
+        window.history.pushState({}, '', '/dashboard?result=true');
+    </script>
+</body>
+</html>
